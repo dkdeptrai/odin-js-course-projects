@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 20px;
+      "
+    ></div>
+    <button id="open-dialog">New Book</button>
+    <dialog id="book-info-dialog">
+      <form>
+        <label>Book Title: <input type="text" id="book-title" /> </label>
+        <label>Author: <input type="text" id="author" /> </label>
+        <label>Pages: <input type="number" id="pages" /> </label>
+        <label
+          >Read Status:
+          <select id="read-status">
+            <option value="read">Read</option>
+            <option value="not-read">Not Read</option>
+          </select>
+        </label>
+        <button id="submit">Submit</button>
+        <button id="close-dialog">Close dialog</button>
+      </form>
+    </dialog>
+  </body>
+  <script src="./script.js"></script>
+</html>
